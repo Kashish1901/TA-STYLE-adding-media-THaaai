@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom style */
+*, *::before ,
+* ::after{
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 32px auto;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+body{
+	line-height: 1.5;
+	
+}
+.display{
+	display: flex;
+	justify-content: flex-start;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+/* Hero Section */
+.hero a{
+	text-decoration: none;
+	font-size: 24px;
+	padding:  20px;
+	color: white;
+}
+.hero a:hover{
+	color: red;
+}
+.hero .hydro{
+	margin-right: 60px;
+	font-size: 32px;
+	font-weight: 600;
+}
+.hero button{
+	color: white;
+	background-color: rgb(207,55,50);
+	border-radius: 30px;
+	font-size: 22px;
+	padding: 10px;
+	margin-top: 32px;
+	margin-left: 30px;
+}
+.hero{
+	background:  linear-gradient(to right , rgba(22,121,228,0.6),rgba(126,243,100,0.6)) , url(../assets/home-bg.jpg) center center no-repeat;
+    color: white;
+	background-size: cover;
+	height: 700px;
+}
+/* main section */
+.main p{
+	font-size: 20px;
+	line-height: 1;
+}
+h1{
+	font-size: 50px;
+	color: white;
+	font-weight: 700;
+	word-spacing: 5px;
+	line-height: 1.4;
+}
+.main .oneline{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 32px;
+}
+.main{
+	margin: 100px 20px;
+}
+.main button{
+   background-color: inherit;	
+   margin-right: 20px;
+   padding: 15px;
+   border: 2px solid white;
+}
+/* about section */
+.col-1-3{
+	width: 30%;
+	margin: 80px 10px;
+}
+.col-1-3 img{
+	width: 100%;
+}
+h2{
+	font-size: 32px;
+	padding: 5px 0;
+}
+h4{
+	font-size: 28px;
+}
+.col-1-3 p{
+	color: rgb(142,142,142);
+	padding: 20px 0;
+	font-size: 24px;
+}
+.progress-item p{
+	color: black;
+}
+.box{
+	width: 10px;
+	height: 10px;
+	background-color: rgb(201, 200, 200);
+	margin-right: 10px;
+}
+.progress-item{
+	margin-bottom: 10px;
+}
+progress{
+	width: 100%;
+	height: 4px;
+	-webkit-appearance: none;
+	-moz-appearance: none ;
+	appearance: none;
+	background-color: rgb(142,142,142);
+}
+progress::-webkit-progress-bar{
+	background-color: lightslategray;
+}
+progress::-webkit-progress-value{
+	background-color: black;
+}
+
+/* Blog section */
+.blog{
+	background-color: rgb(239,239,239);
+}
+h3{
+	font-size: 40px;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 90px;
+}
+.box-e{
+	width: 50%;
+	margin: 30px 20px;
+	background-color: white;
+	margin-bottom: 60px;
+}
+.box-e img{
+	width: 100%;
+	margin-right: 20px;
+}
+.box-e p{
+	font-size: 20px;
+}
+.box-e button{
+	font-size: 20px;
+	padding: 20px 40px;
+	margin: 20px 0;
+	border-radius: 50px;
+}
+time{
+	color: red;
+	font-size: 20px;
+}
+time i{
+	font-size: 20px;
+}
+/* Work section */
+.col-1-4{
+	width: 30%;
+	margin: 40px 30px;
+}
+.work img{
+	width: 100%;
+}
+/*contact section */
+.contact h3{
+	color: white;
+	padding-top: 50px;
+}
+.contact{
+	background-image: linear-gradient(to right , rgb(22,121,228),rgb(126,243,100));
+	height: 600px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.contact button{
+	background-color: rgb(207,55,50);
+	color: white;
+	padding: 10px 30px;
+	border-radius: 20px;
+	font-size: 18px;
+	margin-top: 10px;
+	border: 0;
+}
+.box-p{
+	width: 400px;
+	height: 50px;
+	background-color: white;
+	margin: 10px;
+	border-radius: 6px;
+}
+.box-q{
+	width: 820px;
+	height: 150px;
+	background-color: white;
+	margin: 10px;
+	border-radius: 6px;
+}
+.box-p ,
+.box-q span{
+	vertical-align: middle;
+	margin-left: 5px;
+	color: rgb(110, 108, 108);
+}
+.map{
+	border-radius: 70%;
+	margin-left: 20px;
+	width: 400px;
+	height: 400px;
+}
+/* bottom section */
+.bottom{
+	background: linear-gradient(to right , rgb(65,65,65) ,rgb(2,2,2));
+	color: white;
+}
+.bottom p{
+	font-size: 25px;
+}
+footer{
+	margin: 20px 0;
+	font-size: 20px;
+}
+.bottom h2{
+	margin-top: 32px;
+}
+footer a{
+	text-decoration: none;
+	padding: 20px 20px;
+	color: white;
+}
+footer span{
+	margin-right: 40px;
+}
+.align-start{
+	align-items: flex-start;
+}
